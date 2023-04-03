@@ -2,9 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jkserp/Dashboard.dart';
+import 'package:jkserp/studentlist.dart';
 
 import 'package:sidebarx/sidebarx.dart';
 import 'package:scaffold_gradient_background/scaffold_gradient_background.dart';
+
+import 'Branch.dart';
 
 class Drawercus extends StatefulWidget {
   const Drawercus({Key? key}) : super(key: key);
@@ -150,6 +153,10 @@ class ExampleSidebarX extends StatelessWidget {
           label: 'Attendance',
         ),
         const SidebarXItem(
+          icon: Icons.monetization_on_outlined,
+          label: 'Accounts',
+        ),
+        const SidebarXItem(
           icon: Icons.settings,
           label: 'Setting',
         ),
@@ -179,9 +186,9 @@ class _ScreensExample extends StatelessWidget {
           case 0:
             return Dashboard();
           case 1:
-            return Container();
+            return Student();
           case 2:
-            return Container();
+            return Branchs();
           case 3:
             return Container();
           case 4:

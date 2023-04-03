@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class Dashboard extends StatefulWidget {
@@ -33,7 +34,7 @@ class _DashboardState extends State<Dashboard> {
 
                   Padding(
                     padding: EdgeInsets.only(right: height/3.79),
-                    child: Text("Dashboard",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color:Color(0xFFF5F5F5)),),
+                    child: Text("Dashboard",style: GoogleFonts.poppins( color: Colors.white,fontSize: 25),),
                   ),
                   const SizedBox(
                     width: 510,
